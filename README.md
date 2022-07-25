@@ -6,7 +6,7 @@ Repo for FullStack open excersises for part 10. React Native
 
 - [x] Exercise 10.1
 - [x] Exercise 10.2
-- [ ] Exercise 10.3
+- [x] Exercise 10.3
 - [ ] Exercise 10.4
 - [ ] Exercise 10.5
 - [ ] Exercise 10.6
