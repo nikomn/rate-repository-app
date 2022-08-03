@@ -1,0 +1,34 @@
+const theme = {
+    colors: {
+      textPrimary: '#24292e',
+      textSecondary: '#586069',
+      primary: '#0366d6',
+    },
+    fontSizes: {
+      body: 16,
+      subheading: 18,
+    },
+    fonts: {
+      main: 'System',
+    },
+    fontWeights: {
+      normal: '400',
+      bold: '700',
+    },
+    flexContainer: {
+      flexDirection: 'row',
+    },
+    flexItemA: {
+      flexGrow: 0,
+      backgroundColor: 'green',
+    },
+    flexItemB: {
+      flexGrow: 1,
+      backgroundColor: 'blue',
+    },
+    appBar: {
+      backgroundColor: '#24292e',
+    },
+  };
+  
+  export default theme;

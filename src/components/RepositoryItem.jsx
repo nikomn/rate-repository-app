@@ -1,14 +1,22 @@
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
+import Text from './Text';
+
+// const styles = StyleSheet.create({
+//     text: {
+//       color: 'black',
+//       fontSize: 20,
+//     },
+//   });
 
 const RepositoryItem = ({ item }) => (
     <View>
-        <Text>Full name: {item.fullName}</Text>
-        <Text>Description: {item.description}</Text>
-        <Text>Language: {item.language}</Text>
-        <Text>Forks: {item.forksCount}</Text>
-        <Text>Stars: {item.stargazersCount}</Text>
-        <Text>Rating: {item.ratingAverage}</Text>
-        <Text>Reviews: {item.reviewCount}</Text>
+        <Text fontSize="subheading">Full name: {item.fullName}</Text>
+        <Text fontSize="subheading">Description: {item.description}</Text>
+        <Text fontSize="subheading">Language: {item.language}</Text>
+        <Text fontSize="subheading">Forks: {item.forksCount}</Text>
+        <Text fontSize="subheading">Stars: {item.stargazersCount}</Text>
+        <Text fontSize="subheading">Rating: {item.ratingAverage}</Text>
+        <Text fontSize="subheading">Reviews: {item.reviewCount}</Text>
     </View>
   );
 
