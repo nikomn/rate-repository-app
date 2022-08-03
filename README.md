@@ -2,6 +2,13 @@
 
 Repo for FullStack open excersises for part 10. React Native
 
+## Demo example gif of current(ish) version off app
+
+Here is what the app currently looks like...
+
+![Demo of app](img/demo-10-4.gif)
+
+
 ## Excersises done
 
 - [x] Exercise 10.1
