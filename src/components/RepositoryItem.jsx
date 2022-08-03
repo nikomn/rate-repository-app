@@ -1,13 +1,6 @@
 import { View } from 'react-native';
 import Text from './Text';
 
-// const styles = StyleSheet.create({
-//     text: {
-//       color: 'black',
-//       fontSize: 20,
-//     },
-//   });
-
 const RepositoryItem = ({ item }) => (
     <View>
         <Text fontSize="subheading">Full name: {item.fullName}</Text>
