@@ -29,6 +29,9 @@ const theme = {
     appBar: {
       backgroundColor: '#24292e',
     },
+    buttonBlue: {
+      backgroundColor: 'blue'
+    },
   };
   
   export default theme;

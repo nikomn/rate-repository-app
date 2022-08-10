@@ -1,16 +1,22 @@
-import { View } from 'react-native';
-import Text from './Text';
+import { View, StyleSheet } from 'react-native';
+import ItemContent from './ItemContent';
+import RatingsBar from './RatingsBar';
 
-const RepositoryItem = ({ item }) => (
-    <View>
-        <Text fontSize="subheading">Full name: {item.fullName}</Text>
-        <Text fontSize="subheading">Description: {item.description}</Text>
-        <Text fontSize="subheading">Language: {item.language}</Text>
-        <Text fontSize="subheading">Forks: {item.forksCount}</Text>
-        <Text fontSize="subheading">Stars: {item.stargazersCount}</Text>
-        <Text fontSize="subheading">Rating: {item.ratingAverage}</Text>
-        <Text fontSize="subheading">Reviews: {item.reviewCount}</Text>
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'stretch',
+    paddingTop: 10
+  },
+});
+
+
+const RepositoryItem = ({ item }) => {
+  //console.log('hello, world');
+  return (
+    <View style={styles.container}>
+      <ItemContent item={item}></ItemContent>
+      <RatingsBar item={item}></RatingsBar>
     </View>
   );
-
+}
 export default RepositoryItem;
