@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexGrow: 1,
     backgroundColor: theme.appBar.backgroundColor,
-    height: 100,
+    minHeight: 100,
+    maxHeight: 100,
     justifyContent: 'flex-start',
     flexDirection: 'row'
   },
@@ -17,9 +18,9 @@ const styles = StyleSheet.create({
 
 const AppBar = () => {
   return <View style={styles.container}>
-    <AppBarTab title='Repositories' />
-    {/* <AppBarTab title='Users' /> */}
-    </View>;
+    <AppBarTab title='Repositories' path='/' />
+    <AppBarTab title='Sign In' path='/signin' />
+  </View>;
 };
 
 export default AppBar;
