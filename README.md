@@ -6,7 +6,7 @@ Repo for FullStack open excersises for part 10. React Native
 
 Here is what the app currently looks like...
 
-![Demo of app](img/demo-10-7.gif)
+![Demo of app](img/demo-10-8.gif)
 
 
 ## Excersises done
@@ -18,7 +18,7 @@ Here is what the app currently looks like...
 - [x] Exercise 10.5
 - [x] Exercise 10.6
 - [x] Exercise 10.7
-- [ ] Exercise 10.8
+- [x] Exercise 10.8
 - [ ] Exercise 10.9
 - [ ] Exercise 10.10
 - [ ] Exercise 10.11
