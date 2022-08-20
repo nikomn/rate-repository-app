@@ -3,6 +3,12 @@ import { Formik, useField } from 'formik';
 import FormikTextInput from './FormikTextInput';
 import theme from './theme';
 import Text from './Text';
+import * as yup from 'yup';
+
+const validationSchema = yup.object().shape({
+  username: yup.string().required('Username is required'),
+  password: yup.string().required('Password is required'),
+});
 
 const styles = StyleSheet.create({
       container: {
@@ -24,14 +30,6 @@ const styles = StyleSheet.create({
       },
       buttonText: {
         color: 'white',
-      },
-      textinput: {
-        borderColor: theme.colors.textSecondary,
-        borderWidth: 1,
-        marginTop: 10,
-        marginBottom: 10,
-        borderRadius: 5,
-        padding: 10
       }
     });
 
@@ -46,8 +44,8 @@ const LogInForm = ({ onSubmit }) => {
 
   return (
     <View style={styles.formContainer}>
-      <FormikTextInput style={styles.textinput} name="username" placeholder="Enter username" />
-      <FormikTextInput secureTextEntry={true} style={styles.textinput} name="password" placeholder="Enter password" />
+      <FormikTextInput name="username" placeholder="Enter username" />
+      <FormikTextInput secureTextEntry={true} name="password" placeholder="Enter password" />
       <Pressable style={styles.button} onPress={onSubmit}>
         <Text style={styles.buttonText} fontWeight='bold'>Sign in</Text>
       </Pressable>
@@ -65,7 +63,10 @@ const SignIn = () => {
 
   return (
     <View style={styles.container}>
-      <Formik initialValues={initialValues} onSubmit={onSubmit}>
+      <Formik 
+        initialValues={initialValues} 
+        onSubmit={onSubmit}
+        validationSchema={validationSchema}>
         {({ handleSubmit }) => <LogInForm onSubmit={handleSubmit} />}
       </Formik>
     </View>
