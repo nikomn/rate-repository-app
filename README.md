@@ -20,7 +20,7 @@ Here is what the app currently looks like...
 - [x] Exercise 10.7
 - [x] Exercise 10.8
 - [x] Exercise 10.9
-- [ ] Exercise 10.10
+- [x] Exercise 10.10
 - [ ] Exercise 10.11
 - [ ] Exercise 10.12
 - [ ] Exercise 10.13
