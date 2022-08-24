@@ -21,8 +21,8 @@ Here is what the app currently looks like...
 - [x] Exercise 10.8
 - [x] Exercise 10.9
 - [x] Exercise 10.10
-- [ ] Exercise 10.11
-- [ ] Exercise 10.12
+- [x] Exercise 10.11
+- [x] Exercise 10.12
 - [ ] Exercise 10.13
 - [ ] Exercise 10.14
 - [ ] Exercise 10.15
