@@ -13,8 +13,21 @@ const styles = StyleSheet.create({
   },
 });
 
+// import AuthStorage from '../utils/authStorage';
+
+// const test = async () => {
+//   const testAuthStore = new AuthStorage('qwerty');
+//   await testAuthStore.setAccessToken('abcdefg');
+//   const x = await testAuthStore.getAccessToken();
+//   console.log(x);
+//   await testAuthStore.removeAccessToken();
+//   const y = await testAuthStore.getAccessToken();
+//   console.log(y);
+// };
+
 
 const Main = () => {
+  // test()
   return (
     <View style={styles.container}>
       <AppBar />
