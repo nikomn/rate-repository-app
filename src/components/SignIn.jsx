@@ -56,11 +56,11 @@ const LogInForm = ({ onSubmit }) => {
 };
 
 const SignIn = () => {
-  let navigate = useNavigate();
-  const [signIn] = useSignIn();
+    let navigate = useNavigate();
+    const [signIn] = useSignIn();
     const onSubmit = async (values) => {
       const { username, password } = values;
-  
+
       try {
         const { data } = await signIn({ username, password });
         console.log(data);
