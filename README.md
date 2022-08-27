@@ -23,10 +23,10 @@ Here is what the app currently looks like...
 - [x] Exercise 10.10
 - [x] Exercise 10.11
 - [x] Exercise 10.12
-- [ ] Exercise 10.13
-- [ ] Exercise 10.14
-- [ ] Exercise 10.15
-- [ ] Exercise 10.16
+- [x] Exercise 10.13
+- [x] Exercise 10.14
+- [x] Exercise 10.15
+- [x] Exercise 10.16
 - [ ] Exercise 10.17
 - [ ] Exercise 10.18
 - [ ] Exercise 10.19
