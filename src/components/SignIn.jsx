@@ -40,20 +40,51 @@ const initialValues = {
   password: '',
 };
 
-const LogInForm = ({ onSubmit }) => {
-  const [usernameField, usernameMeta, usernameHelpers] = useField('username');
-  const [passwordField, passwordMeta, passwordHelpers] = useField('password');
+export const SignInContainer = ({onSubmit}) => {
+  
+  const LogInForm = ({ onSubmit }) => {
+    const [usernameField, usernameMeta, usernameHelpers] = useField('username');
+    const [passwordField, passwordMeta, passwordHelpers] = useField('password');
+  
+    return (
+      <View style={styles.formContainer}>
+        <FormikTextInput name="username" placeholder="Enter username" />
+        <FormikTextInput secureTextEntry={true} name="password" placeholder="Enter password" />
+        <Pressable style={styles.button} onPress={onSubmit}>
+          <Text style={styles.buttonText} fontWeight='bold'>Sign in</Text>
+        </Pressable>
+      </View>
+    );
+  };
+
 
   return (
-    <View style={styles.formContainer}>
-      <FormikTextInput name="username" placeholder="Enter username" />
-      <FormikTextInput secureTextEntry={true} name="password" placeholder="Enter password" />
-      <Pressable style={styles.button} onPress={onSubmit}>
-        <Text style={styles.buttonText} fontWeight='bold'>Sign in</Text>
-      </Pressable>
+    <View style={styles.container}>
+      <Formik 
+        initialValues={initialValues} 
+        onSubmit={onSubmit}
+        validationSchema={validationSchema}>
+        {({ handleSubmit }) => <LogInForm onSubmit={handleSubmit} />}
+      </Formik>
     </View>
   );
-};
+
+}
+
+// const LogInForm = ({ onSubmit }) => {
+//   const [usernameField, usernameMeta, usernameHelpers] = useField('username');
+//   const [passwordField, passwordMeta, passwordHelpers] = useField('password');
+
+//   return (
+//     <View style={styles.formContainer}>
+//       <FormikTextInput name="username" placeholder="Enter username" />
+//       <FormikTextInput secureTextEntry={true} name="password" placeholder="Enter password" />
+//       <Pressable style={styles.button} onPress={onSubmit}>
+//         <Text style={styles.buttonText} fontWeight='bold'>Sign in</Text>
+//       </Pressable>
+//     </View>
+//   );
+// };
 
 const SignIn = () => {
     let navigate = useNavigate();
@@ -70,16 +101,20 @@ const SignIn = () => {
       }
     };
 
-  return (
-    <View style={styles.container}>
-      <Formik 
-        initialValues={initialValues} 
-        onSubmit={onSubmit}
-        validationSchema={validationSchema}>
-        {({ handleSubmit }) => <LogInForm onSubmit={handleSubmit} />}
-      </Formik>
-    </View>
-  );
+    return (
+      <SignInContainer onSubmit={onSubmit} />
+    )
+
+  // return (
+  //   <View style={styles.container}>
+  //     <Formik 
+  //       initialValues={initialValues} 
+  //       onSubmit={onSubmit}
+  //       validationSchema={validationSchema}>
+  //       {({ handleSubmit }) => <LogInForm onSubmit={handleSubmit} />}
+  //     </Formik>
+  //   </View>
+  // );
 };
 
 export default SignIn;
