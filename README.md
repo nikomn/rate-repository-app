@@ -9,7 +9,7 @@ Here is what the app currently looks like...
 ![Demo of app](img/demo-10-9.gif)
 
 
-## Excersises done
+## Exercises done
 
 - [x] Exercise 10.1
 - [x] Exercise 10.2
@@ -27,7 +27,7 @@ Here is what the app currently looks like...
 - [x] Exercise 10.14
 - [x] Exercise 10.15
 - [x] Exercise 10.16
-- [ ] Exercise 10.17
+- [x] Exercise 10.17
 - [ ] Exercise 10.18
 - [ ] Exercise 10.19
 - [ ] Exercise 10.20
