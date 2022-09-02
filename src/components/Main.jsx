@@ -4,6 +4,7 @@ import RepositoryList from './RepositoryList';
 import { Route, Routes, Navigate } from 'react-router-native';
 import SignIn from './SignIn';
 import Repository from './Repository';
+import RepositoryContainer from './RepositoryContainer';
 // import WhatIsMyPlatform from './WhatIsMyPlatform';
 //import BodyMassIndexCalculator from './BodyMassIndexCalculator';
 
@@ -22,7 +23,7 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<RepositoryList />} exact />
         <Route path="/signin" element={<SignIn />} exact />
-        <Route path="/repos/:userId" element={<Repository />} exact />
+        <Route path="/repos/:userId" element={<RepositoryContainer />} exact />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       {/* <BodyMassIndexCalculator></BodyMassIndexCalculator> */}

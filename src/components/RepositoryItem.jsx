@@ -24,9 +24,6 @@ const styles = StyleSheet.create({
   }
 });
 
-
-
-
 const RepositoryItem = ({ item, showGithubButton }) => {
   //console.log(item);
   return (
