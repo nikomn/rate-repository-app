@@ -3,7 +3,6 @@ import AppBar from './AppBar';
 import RepositoryList from './RepositoryList';
 import { Route, Routes, Navigate } from 'react-router-native';
 import SignIn from './SignIn';
-import Repository from './Repository';
 import RepositoryContainer from './RepositoryContainer';
 // import WhatIsMyPlatform from './WhatIsMyPlatform';
 //import BodyMassIndexCalculator from './BodyMassIndexCalculator';
