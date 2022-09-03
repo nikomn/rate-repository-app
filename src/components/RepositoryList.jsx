@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const RepositoryListContainer = ({ repositories }) => {
+export const RepositoryListContainer = ({ repositories, onEndReach }) => {
   
   const ItemSeparator = () => <View style={styles.separator} />;
 
@@ -37,14 +37,26 @@ export const RepositoryListContainer = ({ repositories }) => {
           data={repositoryNodes}
           ItemSeparatorComponent={ItemSeparator}
           renderItem={renderRepositoryItem}
+          onEndReached={onEndReach}
+          onEndReachedThreshold={0.5}
       />
   );
 };
 
 const RepositoryList = () => {
-  const { repositories } = useRepositories();
+  const { repositories, fetchMore } = useRepositories({
+    variables: {
+      first: 4
+    },
+  });
 
-  return <RepositoryListContainer repositories={repositories} />;
+  const onEndReach = () => {
+    console.log('You have reached the end of the list');
+    fetchMore();
+  };
+
+
+  return <RepositoryListContainer repositories={repositories} onEndReach={onEndReach} />;
 };
 
 export default RepositoryList;
