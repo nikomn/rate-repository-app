@@ -55,6 +55,10 @@ const AppBar = () => {
         ? <SignOutTab />
         : <AppBarTab title='Sign In' path='/signin' />
       }
+      {logged
+        ? null
+        : <AppBarTab title='SignUp' path='/signup' />
+      }
     </ScrollView>
   </View>;
 };

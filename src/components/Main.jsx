@@ -5,6 +5,7 @@ import { Route, Routes, Navigate } from 'react-router-native';
 import SignIn from './SignIn';
 import RepositoryContainer from './RepositoryContainer';
 import StoreReview from './ReviewForm';
+import CreateUser from './SignUpForm';
 // import WhatIsMyPlatform from './WhatIsMyPlatform';
 //import BodyMassIndexCalculator from './BodyMassIndexCalculator';
 
@@ -23,6 +24,7 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<RepositoryList />} exact />
         <Route path="/signin" element={<SignIn />} exact />
+        <Route path="/signup" element={<CreateUser />} exact />
         <Route path="/review" element={<StoreReview />} exact />
         <Route path="/repos/:userId" element={<RepositoryContainer />} exact />
         <Route path="*" element={<Navigate to="/" replace />} />
