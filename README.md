@@ -28,11 +28,11 @@ Here is what the app currently looks like...
 - [x] Exercise 10.15
 - [x] Exercise 10.16
 - [x] Exercise 10.17
-- [ ] Exercise 10.18
-- [ ] Exercise 10.19
-- [ ] Exercise 10.20
-- [ ] Exercise 10.21
-- [ ] Exercise 10.22
+- [x] Exercise 10.18
+- [x] Exercise 10.19
+- [x] Exercise 10.20
+- [x] Exercise 10.21
+- [x] Exercise 10.22
 - [ ] Exercise 10.23
 - [ ] Exercise 10.24
 - [ ] Exercise 10.25
