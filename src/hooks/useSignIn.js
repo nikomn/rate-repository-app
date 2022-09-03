@@ -11,6 +11,7 @@ const useSignIn = () => {
     const [mutate, result] = useMutation(AUTHENTICATE)
     
     const signIn = async ({ username, password }) => {  
+      console.log(username)
       // call the mutate function here with the right arguments
       const token = await mutate({ variables: 
         { credentials: 

@@ -146,15 +146,17 @@ const RepositoryInfo = ({ repository }) => {
     //console.log('Repo', userId)
     const { loading, error, data } = useQuery(GET_REPO, {
         variables: { repositoryId: userId },
+        fetchPolicy: 'cache-and-network'
     });
-
-    if (loading) return <Text>loading...</Text>;
-    if (error) return <Text>Error</Text>;
 
     const reviewData = useQuery(GET_REVIEW, {
         variables: { repositoryId: userId },
+        fetchPolicy: 'cache-and-network'
     });
-    if (reviewData.loading) return <Text>loading...</Text>;
+
+    if (loading || reviewData.loading) return <Text>loading...</Text>;
+    if (error || reviewData.error) return <Text>Error</Text>;
+
     console.log(reviewData.data.repository.reviews.edges);
     const reviewNodes = reviewData.data.repository.reviews
     ? reviewData.data.repository.reviews.edges.map((edge) => edge.node)
