@@ -35,6 +35,6 @@ Here is what the app currently looks like...
 - [x] Exercise 10.22
 - [ ] Exercise 10.23
 - [ ] Exercise 10.24
-- [ ] Exercise 10.25
+- [x] Exercise 10.25
 - [ ] Exercise 10.26
 - [ ] Exercise 10.27
