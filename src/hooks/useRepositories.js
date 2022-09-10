@@ -10,7 +10,7 @@ const useRepositories = (variables) => {
     const { data, loading, error, fetchMore, ...result } = useQuery(GET_REPOSITORIES, 
         variables,
         {
-        fetchPolicy: 'cache-and-network',
+        fetchPolicy: 'no-cache-and-network',
     });
 
     const handleFetchMore = () => {
