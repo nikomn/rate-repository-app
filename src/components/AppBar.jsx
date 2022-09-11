@@ -52,6 +52,10 @@ const AppBar = () => {
         : null
       }
       {logged
+        ? <AppBarTab title='My reviews' path='/myreviews' />
+        : null
+      }
+      {logged
         ? <SignOutTab />
         : <AppBarTab title='Sign In' path='/signin' />
       }
