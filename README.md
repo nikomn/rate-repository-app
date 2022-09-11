@@ -2,6 +2,10 @@
 
 Repo for FullStack open excersises for part 10. React Native
 
+## Examples of implemeted features
+
+[Examples of implemented features](docs/features.md)
+
 ## Exercises done
 
 - [x] Exercise 10.1
@@ -29,5 +33,5 @@ Repo for FullStack open excersises for part 10. React Native
 - [x] Exercise 10.23
 - [ ] Exercise 10.24
 - [x] Exercise 10.25
-- [ ] Exercise 10.26
+- [x] Exercise 10.26
 - [ ] Exercise 10.27
